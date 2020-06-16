@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyClassesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="我   的   课   程"
+        android:textSize="27dp" />
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@+id/title"
+        android:text="课程名称："
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/teachText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_toStartOf="@+id/title"
+        android:layout_marginTop="50dp"
+        android:text="任课老师："
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teach"
+        android:layout_alignStart="@+id/teachText"
+        android:layout_marginTop="50dp"
+        android:text="课程简介："
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/nameText"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/teach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignBottom="@+id/teachText"
+
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/infoText"
+        android:layout_alignStart="@+id/teach"
+        android:layout_alignBottom="@+id/infoText"
+
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="退选" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/delete"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

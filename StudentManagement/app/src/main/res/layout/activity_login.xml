@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="用户名"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignBaseline="@+id/editText"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="密码"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="53dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="登 录 界 面"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#FF7300"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+ <!--   <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="10dp"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        android:ems="10"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="10dp">
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:height="35dp"
+            android:background="@null" />
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#D3D3D3"
+            android:paddingRight="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dropdown"/> <!-- android:onClick="username_onClick"-->
+    </LinearLayout>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/textView2"
+        android:hint="请输入密码"
+        android:inputType="textPersonName"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="点击我进行注册"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@+id/editText"
+        android:text="联系我们"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="验证码"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="xxxx"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="32dp"
+        android:hint="请输入验证码"
+        android:inputType="textPersonName"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:text="登录"
+        android:layout_marginBottom="46dp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="退出系统"
+        android:id="@+id/exitsystem"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/textView3"/>
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="忘记密码" />
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="点击记住用户名"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/saveName"
+        android:layout_alignStart="@+id/button"
+        android:layout_above="@+id/textView4"/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="点击记住密码"
+        android:id="@+id/savePwd"
+        android:layout_alignBottom="@+id/saveName"
+        android:layout_alignBaseline="@+id/saveName"
+        android:layout_toEndOf="@+id/textView4"/>
+
+
+
+</RelativeLayout>

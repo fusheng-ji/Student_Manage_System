@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetActivity">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:text="确定"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/button"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="165dp"
+        android:text="新密码"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="忘  记  密  码"
+        android:textColor="#FF7300"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入用户名"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignTop="@+id/password"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-11dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:text="点击我返回登陆" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系我们"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username" />
+
+
+    <Button
+        android:id="@+id/exitsystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="退出系统" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="注   册   界   面"
+        android:textSize="25dp"
+        android:textColor="#FF7300"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入用户名"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入密码"
+        android:layout_alignTop="@+id/password"
+        android:layout_alignStart="@+id/name" />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入年龄"
+        android:text=""
+        android:layout_alignTop="@id/textView5"
+        android:layout_alignStart="@+id/pwd" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="点击我返回登陆" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系我们"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username" />
+
+
+    <Button
+        android:id="@+id/exitsystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   android:layout_alignBaseline="@+id/button"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="退出系统" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/button"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="密码"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwd"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="年龄"
+        android:textSize="20dp" />
+
+
+
+    <Button
+        android:id="@+id/Avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="拍照上传头像" />
+
+    <ImageView
+        android:id="@+id/AvatarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/select"
+        tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:text="确定"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Avatar"
+        android:layout_centerHorizontal="true"
+        android:text="从相册选择" />
+
+</RelativeLayout>

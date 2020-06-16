@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserManageActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="用   户   管   理"
+        android:textSize="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="34dp"
+        android:textSize="15dp"
+        android:layout_toStartOf="@+id/title"
+        android:text="用户名：" />
+
+    <TextView
+        android:id="@+id/psText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="26dp"
+        android:text="密码："
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="29dp"
+        android:text="年龄："
+        android:layout_below="@+id/pwd"
+        android:layout_alignStart="@+id/psText" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/nameText"
+        android:textSize="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignTop="@+id/psText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        android:hint="请输入年龄"
+        android:layout_alignTop="@+id/ageText"
+        android:layout_alignStart="@+id/pwd" />
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/nameText"
+        android:text="增加"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="删除"
+        android:layout_alignBottom="@+id/add" />
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:textSize="15dp"
+        android:layout_alignBottom="@id/add"
+        android:layout_alignEnd="@id/add"
+        android:layout_alignParentRight="true"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add"
+        >
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/pwdVisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eye"
+        android:layout_alignBottom="@+id/pwd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+</RelativeLayout>
